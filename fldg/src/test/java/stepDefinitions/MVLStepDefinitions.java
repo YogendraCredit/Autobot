@@ -63,7 +63,14 @@ public class MVLStepDefinitions extends BaseClass {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.MICROSECONDS);
         driver.get("https://x.razorpay.com/auth");
         driver.findElement(By.xpath("//input[@id=\"accountId\"]")).sendKeys("acp.avnish@gmail.com");
-        Thread.sleep(1000);
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//div[text()=\"Next\"]")).click();
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys("CreditSaison@123");
+        Thread.sleep(4000);
+        driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+        Thread.sleep(4000);
+
 
     }
     
