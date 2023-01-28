@@ -1,0 +1,129 @@
+{
+  "partnerLoanId": "JRINTID5408801062",
+  "docsUrl": "https://ksf-documentation.s3.ap-south-1.amazonaws.com/Data.zip",
+  "kycType": "OKYC",
+  "linkedIndividuals": [
+    {
+      "aadhaarXmlType": "UIDAI",
+      "addresses": [
+        {
+          "type": "CURRES",
+          "line1": "409 J P COLONY SECTOR N  01 SHASTRI NAGAR A AH ROAD SHASTRI NAGAR JAIPUR  JAIPUR RAJASTHAN 302016",
+          "line2": null,
+          "city": "JAIPUR",
+          "state": "RJ",
+          "country": "IN",
+          "pinCode": "302016",
+          "ownership": null,
+          "priority": 5
+        },
+        {
+          "type": "PER",
+          "line1": "409 J P COLONY SECTOR N  01 SHASTRI NAGAR A AH ROAD SHASTRI NAGAR JAIPUR  JAIPUR RAJASTHAN 302016",
+          "line2": null,
+          "city": "JAIPUR",
+          "state": "RJ",
+          "country": "IN",
+          "pinCode": "302016",
+          "ownership": null,
+          "priority": 5
+        }
+      ],
+      "applicantType": "LinkedIndividual",
+      "bankAccounts": [
+        {
+          "accountNumber": "10260100020340",
+          "bankName": "BANK OF BARODA",
+          "branch": "NA",
+          "holderName": "Manish Meena",
+          "ifscCode": "BARB0STAJAI",
+          "type": "savings"
+        }
+      ],
+      "contacts": [
+        {
+          "countryCode": "+91",
+          "notify": true,
+          "priority": 5,
+          "type": "phone",
+          "typeCode": "MOBILE",
+          "value": "8302002945"
+        },
+        {
+          "notify": false,
+          "priority": 5,
+          "type": "email",
+          "typeCode": "PERSONAL",
+          "value": "vinaymeena811@gmail.com"
+        }
+      ],
+      "individual": {
+        "accessLevel": "Individual",
+        "birthCountry": "IN",
+        "branch": "1000",
+        "category": "RETAIL",
+        "customerGroup": 0,
+        "customerStatus": "ok",
+        "defaultCurrency": "INR",
+        "dob": "1992-11-27",
+        "education": "PG",
+        "employer": "hardware",
+        "employmentType": "NA",
+        "fatherName": "Maniram Meena",
+        "firstName": "Manish",
+        "fullName": "Manish Meena",
+        "gender": "M",
+        "industry": 99,
+        "language": "EN",
+        "lastName": "Meena",
+        "maritalStatus": "M",
+        "middleName": "",
+        "nationality": "IN",
+        "salutation": "NA",
+        "sector": 99,
+        "sourcingOfficer": 85,
+        "type": 8
+      },
+      "kyc": [
+        {
+          "issuedCountry": "IN",
+          "kycType": "panCard",
+          "kycValue": "PPZTW7681C"
+        }
+      ],
+      "misc": {
+        "foir": 0.011683333333333334,
+        "income": 300000.0
+      },
+      "nsdl": {
+        "name": "Manish Meena"
+      }
+    }
+  ],
+  "loan": {
+    "alwBpiTreatment": "true",
+    "amount": 5000,
+    "disbursement": {
+      "acHolderName": "KISETSU SAISON FINANCE (INDIA) PRIVATE LIMITED",
+      "accType": "current",
+      "accountNo": "4564566406488086",
+      "disbAmount": 5000,
+      "disbDate": "2022-08-30T10:47:04",
+      "disbParty": "CS",
+      "disbType": "NEFT",
+      "ifsc": "YESB0CMSNOC",
+      "partnerBankId": "102",
+      "phoneNumber": ""
+    },
+    "emiType": "fixed",
+    "loanProduct": "JAR",
+    "enduse": null,
+    "loanRepayMethod": "MANUAL"
+  },
+  "loanType": "personal",
+  "partnerAppId": "WithdarawalTest5",
+  "partnerAppTime": "2022-08-30",
+  "partnerId": "JR",
+  "partnerSanctionTime": "2022-08-30",
+  "source": "colending"
+}

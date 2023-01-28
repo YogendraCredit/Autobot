@@ -1,0 +1,43 @@
+{
+  "partnerLoanId": "Automation1673520898266",
+  "amount": 10000.0,
+  "loanProduct": "MVL",
+  "loanStartDate": "2022-09-02T08:01:51",
+  "firstEMIDate": "2022-09-02T08:01:51",
+  "tenure": 13,
+  "loanIntRate": 12.34,
+  "netDisbursalAmount": {
+    "total": 5000,
+    "ksfShare": 3500,
+    "partnerShare": 1500
+  },
+  "loanComponents": {
+    "bpi": {
+      "total": 1000,
+      "ksfShare": 0,
+      "partnerShare": 1000
+    },
+    "processingFee": {
+      "total": 1000,
+      "ksfShare": 0,
+      "partnerShare": 1000
+    },
+    "insurance": {
+      "total": 500,
+      "ksfShare": 0,
+      "partnerShare": 500
+    },
+    "foreClosure": {
+      "total": 1000,
+      "ksfShare": 1000,
+      "partnerShare": 0
+    },
+    "topUpAmount": {
+      "total": 1000,
+      "ksfShare": 1000,
+      "partnerShare": 0
+    }
+  },
+  "apr": 200,
+  "coolOffPeriod": 4
+}

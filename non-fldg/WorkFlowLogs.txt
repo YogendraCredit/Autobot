@@ -1,0 +1,167 @@
+Request method:	POST
+Request URI:	https://pony.qa2.creditsaison.xyz/api/v1/finalOffer/start-process
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "partnerSanctionTime": "2022-08-30",
+    "loan": {
+        "disbursement": {
+            "disbType": "IMPS",
+            "disbParty": "CS",
+            "phoneNumber": "1234567890",
+            "disbDate": "2022-10-06T11:41:12",
+            "disbAmount": "390000",
+            "accountNo": "4564566406488086",
+            "ifsc": "RATN0000156",
+            "accType": "current",
+            "acHolderName": "KISETSU SAISON FINANCE (INDIA) PRIVATE LIMITED",
+            "partnerBankId": "67"
+        },
+        "amount": 5000,
+        "loanProduct": "INC",
+        "loanRepayMethod": "MANUAL",
+        "enduse": null,
+        "alwBpiTreatment": "true",
+        "emiType": "fixed"
+    },
+    "partnerAppTime": "2022-08-30",
+    "partnerLoanId": "AutomationNonFldg1674891846078",
+    "loanType": "personal",
+    "docsUrl": "https://ksf-documentation.s3.ap-south-1.amazonaws.com/Data.zip",
+    "partnerAppId": "yogi98766658uat",
+    "partnerId": "IM",
+    "pennyTesting": {
+        "holderName": "Manish Meena",
+        "validatedTime": "2022-08-30 10:46:39.0",
+        "bankName": "BARB",
+        "accountNumber": "10260100020340",
+        "status": "Success"
+    },
+    "source": "colending",
+    "linkedIndividuals": [
+        {
+            "aadhaarXmlType": "UIDAI",
+            "addresses": [
+                {
+                    "country": "IN",
+                    "ownership": null,
+                    "city": "JIP",
+                    "pinCode": "302016",
+                    "state": "RJ",
+                    "type": "CURRES",
+                    "priority": 5,
+                    "line2": null,
+                    "line1": "409 J P COLONY SECTOR N  01 SHASTRI NAGAR A AH ROAD SHASTRI NAGAR JAIPUR"
+                },
+                {
+                    "country": "IN",
+                    "ownership": null,
+                    "city": "JIP",
+                    "pinCode": "302016",
+                    "state": "RJ",
+                    "type": "PER",
+                    "priority": 5,
+                    "line2": null,
+                    "line1": "409 J P COLONY SECTOR N  01 SHASTRI NAGAR A AH ROAD SHASTRI NAGAR JAIPUR"
+                }
+            ],
+            "individual": {
+                "fatherName": "Maniram Meena",
+                "lastName": "Meena",
+                "education": "PG",
+                "gender": "M",
+                "industry": 99,
+                "language": "EN",
+                "type": 8,
+                "branch": "1000",
+                "sourcingOfficer": 85,
+                "customerStatus": "ok",
+                "defaultCurrency": "INR",
+                "birthCountry": "IN",
+                "employer": "hardware",
+                "sector": 99,
+                "accessLevel": "Individual",
+                "employmentType": "NA",
+                "customerGroup": 0,
+                "fullName": "Manish Meena",
+                "firstName": "Manish",
+                "nationality": "IN",
+                "dob": "1992-11-27",
+                "middleName": null,
+                "salutation": "MR.",
+                "category": "RETAIL",
+                "maritalStatus": "M"
+            },
+            "kyc": [
+                {
+                    "kycValue": "GIUIT7870J",
+                    "issuedCountry": "IN",
+                    "kycType": "panCard"
+                }
+            ],
+            "applicantType": "LinkedIndividual",
+            "bankAccounts": [
+                {
+                    "holderName": "Manish Meena",
+                    "bankName": "BANK OF BARODA",
+                    "accountNumber": "10260100020340",
+                    "type": "savings",
+                    "branch": "NA",
+                    "ifscCode": "BARB0STAJAI"
+                }
+            ],
+            "contacts": [
+                {
+                    "countryCode": "+91",
+                    "priority": 5,
+                    "type": "phone",
+                    "value": "8296767960",
+                    "notify": true,
+                    "typeCode": "MOBILE"
+                },
+                {
+                    "priority": 5,
+                    "type": "email",
+                    "value": "shrishti.sinha@creditsaison-in.com",
+                    "notify": false,
+                    "typeCode": "PERSONAL"
+                }
+            ],
+            "nsdl": {
+                "name": "Manish Meena"
+            },
+            "misc": {
+                "income": 300000.0,
+                "foir": 0.011683333333333334
+            }
+        }
+    ],
+    "kycType": "OKYC"
+}
+HTTP/1.1 400 Bad Request
+Date: Sat, 28 Jan 2023 07:44:39 GMT
+Content-Type: application/json
+Content-Length: 143
+Connection: keep-alive
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+{
+    "message": "Initial Offer not found for given id",
+    "status": "failed",
+    "reason": "Initial offer does not exist for AutomationNonFldg1674891846078"
+}

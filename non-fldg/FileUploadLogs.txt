@@ -1,0 +1,38 @@
+Request method:	POST
+Request URI:	https://scarlet.qa2.creditsaison.xyz/api/v1/preApprovedOffer/file
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = initialOffer1674891846078.csv
+				Content-Type: application/octet-stream
+
+				src/test/resources/initialOffer1674891846078.csv
+Body:			<none>
+HTTP/1.1 200 
+Date: Sat, 28 Jan 2023 07:44:17 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Set-Cookie: JSESSIONID=499BC881E078D74C99D5E5E7F7706413; Path=/; HttpOnly
+tracer-id: b79f4f344dbdecd6
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "fileId": "2c4862b8-cb81-43ee-93c1-d6b22af9cb58",
+    "status": "INIT"
+}

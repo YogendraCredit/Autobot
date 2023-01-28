@@ -1,0 +1,130 @@
+{
+  "linkedIndividuals": [
+    {
+      "addresses": [
+        {
+          "city": "Jamtara",
+          "country": "IN",
+          "line1": "VILL HARLATAR POST MANJHLADIH PS NARAYANPUR,HARLATAR,Manghladih",
+          "line2": "",
+          "pinCode": "530017",
+          "priority": 5,
+          "state": "JH",
+          "type": "CURRES"
+        },
+        {
+          "city": "HARLATAR",
+          "country": "IN",
+          "line1": "VILL HARLATAR POST MANJHLADIH PS NARAYANPUR,HARLATAR,Manghladih",
+          "line2": "",
+          "pinCode": "530017",
+          "priority": 4,
+          "state": "JH",
+          "type": "PER"
+        }
+      ],
+      "aadhaarXmlType": "DIGILOCKER",
+      "applicantType": "LinkedIndividual",
+      "bankAccounts": [
+        {
+          "accountNumber": "919010093302041919010093302041",
+          "bankName": "AXIS BANK",
+          "branch": "NA",
+          "holderName": "Subhojit Ghosh",
+          "ifscCode": "UTIB0002619",
+          "type": "savings"
+        }
+      ],
+      "contacts": [
+        {
+          "countryCode": "+91",
+          "notify": true,
+          "priority": 5,
+          "type": "phone",
+          "typeCode": "MOBILE",
+          "value": "7250966337"
+        },
+        {
+          "notify": false,
+          "priority": 5,
+          "type": "email",
+          "typeCode": "PERSONAL",
+          "value": "bhudevswarnkar@gmail.com"
+        }
+      ],
+      "individual": {
+        "accessLevel": "Individual",
+        "birthCountry": "IN",
+        "branch": "1000",
+        "category": "RETAIL",
+        "customerGroup": 0,
+        "customerStatus": "ok",
+        "defaultCurrency": "INR",
+        "dob": "1989-10-04",
+        "education": "PG",
+        "employer": "AYE FINANCE PRIVATE LIMITED",
+        "employmentType": "NA",
+        "fatherName": "Subal Chandra Ghosh",
+        "firstName": "Jadda",
+        "fullName": "Jadda Rajasekhar",
+        "gender": "M",
+        "industry": 99,
+        "language": "EN",
+        "lastName": "Rajasekhar",
+        "maritalStatus": "O",
+        "middleName": "",
+        "nationality": "IN",
+        "salutation": "NA",
+        "sector": 99,
+        "sourcingOfficer": 85,
+        "type": 6
+      },
+      "kyc": [
+        {
+          "issuedCountry": "IN",
+          "kycType": "panCard",
+          "kycValue": "PRZTE7681U"
+        }
+      ],
+      "misc": {
+        "foir": 0.48745,
+        "income": 20000
+      }
+    }
+  ],
+  "loan": {
+    "alwBpiTreatment": "true",
+    "amount": 40000,
+    "disbursement": {
+      "acHolderName": "KISETSU SAISON FINANCE (INDIA) PRIVATE LIMITED",
+      "accType": "current",
+      "accountNo": "4564566406488086",
+      "disbAmount": 40000,
+      "disbDate": "2022-04-11T12:30:53",
+      "disbParty": "CS",
+      "disbType": "NEFT",
+      "ifsc": "YESB0CMSNOC",
+      "partnerBankId": "102",
+      "phoneNumber": ""
+    },
+    "emiType": "fixed",
+    "loanAssetValue": 40000,
+    "loanIntRate": 36,
+    "loanProduct": "MVL",
+    "loanRepayMethod": "MANUAL",
+    "loanStartDate": "2022-04-11T12:30:53",
+    "nextRepayDate": "2022-05-05T00:00:00",
+    "nextRepayPftDate": "2022-05-05T00:00:00",
+    "repayFrq": "M0005",
+    "repayPftFrq": "M0005",
+    "tenure": 24
+  },
+  "loanType": "personal",
+  "partnerAppId": "2c9fa00a80072d460180176cd9e453d3",
+  "partnerAppTime": "2022-03-31",
+  "partnerId": "MV",
+  "partnerLoanId": "AutomationTest9",
+  "partnerSanctionTime": "2022-03-31",
+  "source": "colending",
+  "docsUrl": "https://ksf-documentation.s3.ap-south-1.amazonaws.com/MVL_Automation.zip"
+}

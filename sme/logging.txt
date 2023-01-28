@@ -1,0 +1,602 @@
+Request method:	POST
+Request URI:	https://tars.qa2.creditsaison.xyz/api/v1/generic/start-process
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "partnerSanctionTime": "2020-11-16T09:22:56",
+    "loan": {
+        "loanAssetValue": 2000000.0,
+        "disbursement": {
+            "disbType": "NEFT",
+            "disbParty": "CS",
+            "phoneNumber": 8249095631,
+            "disbDate": "2020-11-16T00:00:00",
+            "disbAmount": 2000000.0,
+            "accountNo": "499901105512",
+            "ifsc": "RATN0000156",
+            "accType": "CA",
+            "acHolderName": "Prog CAP",
+            "partnerBankId": "68"
+        },
+        "amount": 2000000.0,
+        "loanStartDate": "2020-11-16T00:00:00",
+        "loanProduct": "PCL",
+        "loanIntRate": 18.25,
+        "overAllLoanAmount": 2000000.0,
+        "loanRepayMethod": "MANUAL",
+        "alwBpiTreatment": true,
+        "sanctionDate": "2020-11-16T09:22:56",
+        "tenure": 4
+    },
+    "partnerLoanId": "Automation1674890509944",
+    "loanType": "business",
+    "creditLine": {
+        "dateOfCreditLimit": "2022-11-16",
+        "expiryDateOfCreditLimit": "2023-10-20",
+        "creditLimit": 3500000
+    },
+    "docsUrl": "https://organizedbucket-qa2-961043014301-eu-west-1.s3.eu-west-1.amazonaws.com/protons_test/LoanAgreement_35492.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECMaCmFwLXNvdXRoLTEiRzBFAiEAwoEJGy9xNNibt7t8yqKZMgqmVM6ilRdagX0u0xyGEhMCIBe8M8pyLPZ4p2Tryp2%2Bsjdcy6lFcePH%2FOObUDJlvWkcKuwDCIz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAxoMOTYxMDQzMDE0MzAxIgyCLCwOuOShZ9bZ6RMqwANbG2j7kCSxlUhZotQ%2FAZ5JtzUYBzfHXgp%2BXYSLv132EYfldbmdYeN5ElM5%2FS4k1qVg%2FC%2Brv%2FaQf2FMot6RTBm1RCvlkiji4KfFFEipjMIPe8%2BhSAGgW8zoZb5bpi53Wx36d7Llw50qILHAcow5xJNQBDDrA2V1amawc6alVEP5Uu%2B9gjTXdSsWm997oB7qT1xTtJ5zFVLOqOrpP8wpvWA6JIiPnTROcepiRHp5rsqlL8%2FWFr02Av5qxYjQBmDQW%2FSLWWngdIKNZ1jIyMOjmLQx3eMCbu8uYV8hzTGQKTOfZxxm%2F8KDrUJkHEkJsL1PzqEp4%2FO4rXiRdHSn5TFR7t5k3eRsrDNlGy3PVeR3YiUcQdY1ghpXS4btO4JxXEdtetnquWkCggkuF6jL2XdSagOCX8JISd2zerNGaLP8Gpn6HAH%2FHyuCpd%2FoQ2ypc9tbW1GZMGRIDvagwX6aBGDsYuSLtTxZl%2BVnc2FxpIXCwtV3guDrQ8DaCkSWzBzi7Kp8TvApJEdBPd2IlGDSFMld3wqRElJDkYt4ZAcr9FAnFFkCpC7SmWdpK4sBo4YH9iIHYP1aKZJg2CMcaaetoO1d6iynMKvoqZ4GOoQCTyYH%2B1QvAC3MMgs0wtMbrPQRwBzL%2Bh4lfaUjOxLcGEY%2FYaJVGLJefeie8vzRBIFYj7QKAquFy3A7d2gUPiRz3HNlGkS1Vi8Cr149RUwTQX1uBqF06zezOQDrNM6r3FVd6oopEjdgBEiJc1MXu2my7vKb8njFUfPC92kcDzlw84%2BvBwc79TP5oro3ymidFark4lt9Rs69GIbsFo1lCYKz5TvhVkw9frlbo0oDr5L5hUJY%2BQGr5Gw1wzVe4SYz9oeYzjwmJD%2Bah2hX2C9P1WhHhH4KbD9hbM9i%2FqlZc6PCnxJipP26QpBWDr6%2FY3WFdHn6%2B64ZOBd2CQJ5NKbZNcB13TS%2FMW0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230120T110033Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIA57QVAUKOZZKILCXS%2F20230120%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=732998354acc630f54d7995ea9a0e496703577a85d61becfcc31b0297339e878",
+    "linkedBusiness": {
+        "addresses": [
+            {
+                "country": "IN",
+                "city": "Raipur",
+                "pinCode": "602002",
+                "state": "TN",
+                "type": "REGADD",
+                "priority": 4,
+                "line1": "2/1A"
+            },
+            {
+                "country": "IN",
+                "city": "Raipur",
+                "pinCode": "602002",
+                "state": "TN",
+                "type": "CORP",
+                "priority": 5,
+                "line1": "2/1A"
+            }
+        ],
+        "business": {
+            "industrySubType": "99",
+            "industryType": "99",
+            "name": "bittu",
+            "registrationDate": "2017-06-01",
+            "type": "4"
+        },
+        "kyc": [
+            {
+                "kycValue": "ABEFF2234Y",
+                "kycType": "panCard"
+            }
+        ],
+        "applicantType": "LinkedBusiness",
+        "contacts": [
+            {
+                "countryCode": "91",
+                "type": "phone",
+                "priority": 5,
+                "value": "9940799992",
+                "typeCode": "OFFICE"
+            },
+            {
+                "type": "email",
+                "priority": 5,
+                "value": "testing@gmail.com",
+                "typeCode": "OFFICE"
+            }
+        ]
+    },
+    "partnerAppId": "12345678989",
+    "partnerId": "PC",
+    "source": "colending",
+    "creditPolicy": {
+        "loanCategory": 11,
+        "partnerDecision": "approved",
+        "bureauName": "cibil"
+    },
+    "linkedIndividuals": [
+        {
+            "addresses": [
+                {
+                    "country": "IN",
+                    "city": "Chennai",
+                    "pinCode": "602002",
+                    "state": "TN",
+                    "type": "CURRES",
+                    "priority": 5,
+                    "line1": "39/18 MB Street, Ellis Road, Anna Salai"
+                }
+            ],
+            "individual": {
+                "firstName": "yohi",
+                "lastName": "Kumar ",
+                "fatherName": "Misrilal Kushal Chand",
+                "education": "NA",
+                "accessLevel": "Individual",
+                "gender": "F",
+                "dob": "1990-05-29",
+                "maritalStatus": "NA"
+            },
+            "kyc": [
+                {
+                    "kycValue": "VDLPJ4201K",
+                    "kycType": "panCard"
+                }
+            ],
+            "applicantType": "LinkedIndividual",
+            "contacts": [
+                {
+                    "countryCode": "91",
+                    "type": "phone",
+                    "priority": 5,
+                    "value": "9940795541",
+                    "typeCode": "MOBILE"
+                },
+                {
+                    "type": "email",
+                    "priority": 5,
+                    "value": "16ee0@gmail.com",
+                    "typeCode": "PERSONAL"
+                }
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Date: Sat, 28 Jan 2023 07:22:04 GMT
+Content-Type: text/plain;charset=ISO-8859-1
+Content-Length: 8
+Connection: keep-alive
+Set-Cookie: JSESSIONID=99D2EE3762A8592E393F9A5235731B3B; Path=/; HttpOnly
+tracer-id: 5dc7c3a1a50caf46
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+11420234
+Request method:	GET
+Request URI:	https://shield.qa2.creditsaison.xyz/api/v1/appForm/findByPartnerLoanId/Automation1674890509944
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	partnerLoanId=Automation1674890509944
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Date: Sat, 28 Jan 2023 07:22:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: JSESSIONID=ED7BA5A3E2D23FB8FB1DA047E469D185; Path=/; HttpOnly
+tracer-id: c04ad8149902796a
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "id": "65729307-c29c-45d6-9b92-621606a2ee1f",
+    "partnerLoanId": "Automation1674890509944",
+    "restructured": null,
+    "oldPartnerLoanId": null,
+    "limitEnhanced": null,
+    "batchId": null,
+    "partnerAppId": "12345678989",
+    "partnerId": "PC",
+    "partnerAppTime": "2023-01-28T07:22:01",
+    "partnerDisburseTime": "2023-01-28T07:22:01",
+    "partnerSanctionTime": "2020-11-16T09:22:56",
+    "source": "colending",
+    "loanType": "business",
+    "creditLine": {
+        "id": 84896,
+        "creditLimit": 3500000.0,
+        "dateOfCreditLimit": "2022-11-16T00:00:00",
+        "dateOfCreditLimitRevision": null,
+        "availableCreditLimit": null,
+        "expiryDateOfCreditLimit": "2023-10-20T00:00:00",
+        "blocked": false
+    },
+    "linkedIndividuals": [
+        {
+            "id": 201696,
+            "applicantType": "LinkedIndividual",
+            "individual": {
+                "id": 192184,
+                "firstName": "yohi",
+                "middleName": null,
+                "lastName": "Kumar ",
+                "salutation": null,
+                "accessLevel": "Individual",
+                "education": "NA",
+                "maritalStatus": "NA",
+                "gender": "F",
+                "cibil": null,
+                "dob": "1990-05-29T00:00:00",
+                "fatherName": "Misrilal Kushal Chand",
+                "fullName": "yohi Kumar ",
+                "caste": null,
+                "religion": null,
+                "nationality": null,
+                "birthCountry": null,
+                "parentCountry": null,
+                "riskCountry": null,
+                "defaultCurrency": null,
+                "branch": null,
+                "language": null,
+                "aliasName": null,
+                "dependents": null,
+                "isStaff": null,
+                "staffId": null,
+                "employmentType": null,
+                "sector": null,
+                "subSector": null,
+                "industry": null,
+                "category": null,
+                "type": null,
+                "dsaCode": null,
+                "dsaDepartment": null,
+                "applicationNo": null,
+                "coreBankId": null,
+                "customerGroup": null,
+                "customerStatus": null,
+                "sourcingOfficer": null,
+                "isStlCustomer": null,
+                "segment": null,
+                "subSegment": null,
+                "target": null,
+                "motherName": null,
+                "spouseName": null,
+                "employer": null,
+                "partyType": null,
+                "partyRelation": null,
+                "relatedToDirector": null,
+                "shareHolding": null,
+                "empCategory": null,
+                "designation": null,
+                "totalWorkEx": null,
+                "sectorOfWork": null,
+                "natureOfWork": null
+            },
+            "business": null,
+            "bankAccounts": [
+                
+            ],
+            "kyc": [
+                {
+                    "id": 206422,
+                    "kycType": "panCard",
+                    "kycValue": "VDLPJ4201K",
+                    "firstName": "yohi",
+                    "middleName": null,
+                    "lastName": "Kumar ",
+                    "issueDate": null,
+                    "issuingAuthority": null,
+                    "fatherName": "Misrilal Kushal Chand",
+                    "motherName": null,
+                    "spouseName": null,
+                    "dob": "1990-05-29T00:00:00",
+                    "expiryDate": null,
+                    "referenceNo": null,
+                    "nationality": null,
+                    "gender": null,
+                    "passportType": null,
+                    "issuedCountry": null,
+                    "sourceType": null,
+                    "reportStatus": null
+                }
+            ],
+            "addresses": [
+                {
+                    "id": 306534,
+                    "type": "CURRES",
+                    "line1": "39/18 MB Street, Ellis Road, Anna Salai",
+                    "line2": null,
+                    "city": "Chennai",
+                    "state": "TN",
+                    "country": "IN",
+                    "pinCode": "602002",
+                    "ownership": null,
+                    "priority": 5
+                }
+            ],
+            "misc": null,
+            "contacts": [
+                {
+                    "id": 370160,
+                    "type": "email",
+                    "value": "16ee0@gmail.com",
+                    "notify": null,
+                    "priority": 5,
+                    "typeCode": "PERSONAL",
+                    "countryCode": null
+                },
+                {
+                    "id": 370161,
+                    "type": "phone",
+                    "value": "9940795541",
+                    "notify": null,
+                    "priority": 5,
+                    "typeCode": "MOBILE",
+                    "countryCode": "91"
+                }
+            ],
+            "webPresenceList": null,
+            "ckyc": null,
+            "partnerBureau": [
+                
+            ],
+            "nsdl": null,
+            "dedupe": "0",
+            "dedupeReason": null,
+            "customerId": "rUrj58_gTl6h8AfT8KGL9Q",
+            "cif": null,
+            "limitId": null,
+            "transitionState": "loaded",
+            "regulatoryStatus": "0",
+            "references": [
+                
+            ],
+            "riskCategory": null,
+            "vkycFlag": null,
+            "vkyc": null,
+            "aadhaarXmlType": null,
+            "insuranceDetails": [
+                
+            ]
+        }
+    ],
+    "coApplicants": [
+        
+    ],
+    "linkedBusiness": {
+        "id": 201697,
+        "applicantType": "LinkedBusiness",
+        "individual": null,
+        "business": {
+            "id": 15057,
+            "name": "bittu",
+            "type": "4",
+            "parent": null,
+            "registrationDate": "2017-06-01T00:00:00",
+            "operationDate": null,
+            "industryType": "99",
+            "cibil": null,
+            "crisilRating": null,
+            "whetherReConstituted": null,
+            "previousConstitution": null,
+            "newConstitution": null,
+            "industrySubType": "99",
+            "cmr": null,
+            "category": null,
+            "cin": null,
+            "cgtmse": null,
+            "uan": null,
+            "msmeType": null,
+            "businessName": null,
+            "shareHolding": null
+        },
+        "bankAccounts": [
+            
+        ],
+        "kyc": [
+            {
+                "id": 206423,
+                "kycType": "panCard",
+                "kycValue": "ABEFF2234Y",
+                "firstName": "bittu",
+                "middleName": null,
+                "lastName": null,
+                "issueDate": null,
+                "issuingAuthority": null,
+                "fatherName": null,
+                "motherName": null,
+                "spouseName": null,
+                "dob": null,
+                "expiryDate": null,
+                "referenceNo": null,
+                "nationality": null,
+                "gender": null,
+                "passportType": null,
+                "issuedCountry": null,
+                "sourceType": null,
+                "reportStatus": null
+            }
+        ],
+        "addresses": [
+            {
+                "id": 306536,
+                "type": "CORP",
+                "line1": "2/1A",
+                "line2": null,
+                "city": "Raipur",
+                "state": "TN",
+                "country": "IN",
+                "pinCode": "602002",
+                "ownership": null,
+                "priority": 5
+            },
+            {
+                "id": 306535,
+                "type": "REGADD",
+                "line1": "2/1A",
+                "line2": null,
+                "city": "Raipur",
+                "state": "TN",
+                "country": "IN",
+                "pinCode": "602002",
+                "ownership": null,
+                "priority": 4
+            }
+        ],
+        "misc": null,
+        "contacts": [
+            {
+                "id": 370163,
+                "type": "email",
+                "value": "testing@gmail.com",
+                "notify": null,
+                "priority": 5,
+                "typeCode": "OFFICE",
+                "countryCode": null
+            },
+            {
+                "id": 370162,
+                "type": "phone",
+                "value": "9940799992",
+                "notify": null,
+                "priority": 5,
+                "typeCode": "OFFICE",
+                "countryCode": "91"
+            }
+        ],
+        "webPresenceList": null,
+        "ckyc": null,
+        "partnerBureau": [
+            
+        ],
+        "nsdl": null,
+        "dedupe": "0",
+        "dedupeReason": null,
+        "customerId": "Q8KogyrHTy6oGF6VCF6Trw",
+        "cif": null,
+        "limitId": null,
+        "transitionState": "loaded",
+        "regulatoryStatus": "0",
+        "references": [
+            
+        ]
+    },
+    "assetGroup": null,
+    "loan": {
+        "id": 190325,
+        "feeDetails": [
+            
+        ],
+        "insuranceFeeDetails": [
+            
+        ],
+        "loanProduct": "PCL",
+        "loanRepayMethod": "MANUAL",
+        "loanAssetValue": 2000000.0,
+        "loanIntRate": 18.25,
+        "tenure": 4,
+        "insuranceTenure": null,
+        "amount": 2000000.0,
+        "enduse": null,
+        "loanStartDate": "2020-11-16T00:00:00",
+        "merchant": null,
+        "emiScheduleList": null,
+        "partnerInterestAmount": null,
+        "productNameList": null,
+        "mandateSource": null,
+        "partnerScore": null,
+        "downPayment": null,
+        "alwBpiTreatment": true,
+        "partnerEmiAmount": null,
+        "processingFee": null,
+        "repayFrq": null,
+        "repayPftFrq": null,
+        "nextRepayDate": null,
+        "nextRepayPftDate": null,
+        "partnerBpiAmount": null,
+        "disbursement": {
+            "id": 179963,
+            "disbParty": "CS",
+            "disbType": "NEFT",
+            "disbDate": "2020-11-16T00:00:00",
+            "disbAmount": 2000000.0,
+            "partnerBankId": "68",
+            "ifsc": "RATN0000156",
+            "accountNo": "499901105512",
+            "acHolderName": "Prog CAP",
+            "accType": "CA",
+            "phoneNumber": 8249095631,
+            "issueBank": null,
+            "favourName": null,
+            "payableLoc": null,
+            "printingLoc": null,
+            "chequeNo": null,
+            "valueDate": null
+        },
+        "fundingAllocation": 1.0,
+        "disbursalAmount": null,
+        "coLenderSMAClassificaiton": null,
+        "fieldInvestigationDate": null,
+        "fieldInvestigationStatus": null,
+        "numberOfCoBorrowers": null,
+        "partnerUtrNumber": null,
+        "partnerDisbursementAmount": null,
+        "overAllLoanAmount": 2000000.0,
+        "sanctionDate": "2020-11-16T09:22:56",
+        "emiType": null,
+        "status": null,
+        "topUp": null,
+        "insuranceFee": null,
+        "lifeInsuranceFee": null,
+        "insuranceType": null,
+        "requestedAmount": null,
+        "negotiationStatus": 0,
+        "mcuStatus": 0,
+        "loanSegment": null,
+        "loanSegmentDetails": null,
+        "modeOfDisbursal": "NEFT",
+        "customerConfirmationStatus": "pending",
+        "requestedTenure": null
+    },
+    "creditPolicy": {
+        "partnerDecision": "approved",
+        "loanCategory": 11.0,
+        "bureauName": "cibil",
+        "bureauSegment": null,
+        "creditPolicyVersion": null,
+        "creditPolicyDate": null,
+        "customerType": null
+    },
+    "ckycFlag": null,
+    "ckycValidationMode": null,
+    "offerId": null,
+    "mandate": null,
+    "invoiceFinancing": null,
+    "pennyTesting": null,
+    "kycType": null,
+    "customerConsents": null,
+    "loanProduct": "PCL",
+    "appFormStatus": null,
+    "workflowId": "11420234",
+    "status": "QC_IN_PROGRESS",
+    "stage": "qcstage",
+    "greenChannelFlag": false,
+    "createdAt": "2023-01-28T07:22:01",
+    "dsa": null,
+    "marketplace": false,
+    "bankStmtReq": null,
+    "flowType": null,
+    "softRejected": false,
+    "eligibleForSoftReject": false,
+    "miscData": null,
+    "otpValidation": null,
+    "fcuStatus": null,
+    "onHoldReason": null,
+    "loanAppDedupe": null
+}

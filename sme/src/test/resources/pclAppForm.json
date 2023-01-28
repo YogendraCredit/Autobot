@@ -1,0 +1,141 @@
+{
+  "partnerLoanId": "yogi98765dev7611",
+  "partnerAppId": "12345678989",
+  "partnerId": "PC",
+  "partnerSanctionTime": "2020-11-16T09:22:56",
+  "source": "colending",
+  "loanType": "business",
+  "linkedIndividuals": [
+    {
+      "applicantType": "LinkedIndividual",
+      "individual": {
+        "firstName": "yohi",
+        "lastName": "Kumar ",
+        "accessLevel": "Individual",
+        "education": "NA",
+        "maritalStatus": "NA",
+        "gender": "F",
+        "dob": "1990-05-29",
+        "fatherName": "Misrilal Kushal Chand"
+      },
+      "kyc": [
+        {
+          "kycType": "panCard",
+          "kycValue": "VDLPJ4201K"
+        }
+      ],
+      "addresses": [
+        {
+          "type": "CURRES",
+          "line1": "39/18 MB Street, Ellis Road, Anna Salai",
+          "city": "Chennai",
+          "state": "TN",
+          "country": "IN",
+          "pinCode": "602002",
+          "priority": 5
+        }
+      ],
+      "contacts": [
+        {
+          "type": "phone",
+          "value": "9940795541",
+          "priority": 5,
+          "typeCode": "MOBILE",
+          "countryCode": "91"
+        },
+        {
+          "type": "email",
+          "value": "16ee0@gmail.com",
+          "priority": 5,
+          "typeCode": "PERSONAL"
+        }
+      ]
+    }
+  ],
+  "loan": {
+    "loanProduct": "PCL",
+    "loanRepayMethod": "MANUAL",
+    "loanAssetValue": 2000000.00,
+    "loanStartDate": "2020-11-16T00:00:00",
+    "loanIntRate": 18.25,
+    "tenure": 4,
+    "amount": 2000000.00,
+    "overAllLoanAmount": 2000000.00,
+    "alwBpiTreatment": true,
+    "sanctionDate": "2020-11-16T09:22:56",
+    "disbursement": {
+      "disbParty": "CS",
+      "disbType": "NEFT",
+      "disbDate": "2020-11-16T00:00:00",
+      "disbAmount": 2000000.00,
+      "partnerBankId": "68",
+      "ifsc": "RATN0000156",
+      "accountNo": "499901105512",
+      "acHolderName": "Prog CAP",
+      "accType": "CA",
+      "phoneNumber": 8249095631
+    }
+  },
+  "linkedBusiness": {
+    "applicantType": "LinkedBusiness",
+    "business": {
+      "name": "bittu",
+      "type": "4",
+      "registrationDate": "2017-06-01",
+      "industryType": "99",
+      "industrySubType": "99"
+    },
+    "kyc": [
+      {
+        "kycType": "panCard",
+        "kycValue": "ABEFF2234Y"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "REGADD",
+        "line1": "2/1A",
+        "city": "Raipur",
+        "state": "TN",
+        "country": "IN",
+        "pinCode": "602002",
+        "priority": 4
+      },
+      {
+        "type": "CORP",
+        "line1": "2/1A",
+        "city": "Raipur",
+        "state": "TN",
+        "country": "IN",
+        "pinCode": "602002",
+        "priority": 5
+      }
+    ],
+    "contacts": [
+      {
+        "type": "phone",
+        "value": "9940799992",
+        "priority": 5,
+        "typeCode": "OFFICE",
+        "countryCode": "91"
+      },
+      {
+        "type": "email",
+        "value": "testing@gmail.com",
+        "priority": 5,
+        "typeCode": "OFFICE"
+      }
+    ]
+  },
+  "docsUrl": "https://organizedbucket-qa2-961043014301-eu-west-1.s3.eu-west-1.amazonaws.com/protons_test/LoanAgreement_35492.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECMaCmFwLXNvdXRoLTEiRzBFAiEAwoEJGy9xNNibt7t8yqKZMgqmVM6ilRdagX0u0xyGEhMCIBe8M8pyLPZ4p2Tryp2%2Bsjdcy6lFcePH%2FOObUDJlvWkcKuwDCIz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAxoMOTYxMDQzMDE0MzAxIgyCLCwOuOShZ9bZ6RMqwANbG2j7kCSxlUhZotQ%2FAZ5JtzUYBzfHXgp%2BXYSLv132EYfldbmdYeN5ElM5%2FS4k1qVg%2FC%2Brv%2FaQf2FMot6RTBm1RCvlkiji4KfFFEipjMIPe8%2BhSAGgW8zoZb5bpi53Wx36d7Llw50qILHAcow5xJNQBDDrA2V1amawc6alVEP5Uu%2B9gjTXdSsWm997oB7qT1xTtJ5zFVLOqOrpP8wpvWA6JIiPnTROcepiRHp5rsqlL8%2FWFr02Av5qxYjQBmDQW%2FSLWWngdIKNZ1jIyMOjmLQx3eMCbu8uYV8hzTGQKTOfZxxm%2F8KDrUJkHEkJsL1PzqEp4%2FO4rXiRdHSn5TFR7t5k3eRsrDNlGy3PVeR3YiUcQdY1ghpXS4btO4JxXEdtetnquWkCggkuF6jL2XdSagOCX8JISd2zerNGaLP8Gpn6HAH%2FHyuCpd%2FoQ2ypc9tbW1GZMGRIDvagwX6aBGDsYuSLtTxZl%2BVnc2FxpIXCwtV3guDrQ8DaCkSWzBzi7Kp8TvApJEdBPd2IlGDSFMld3wqRElJDkYt4ZAcr9FAnFFkCpC7SmWdpK4sBo4YH9iIHYP1aKZJg2CMcaaetoO1d6iynMKvoqZ4GOoQCTyYH%2B1QvAC3MMgs0wtMbrPQRwBzL%2Bh4lfaUjOxLcGEY%2FYaJVGLJefeie8vzRBIFYj7QKAquFy3A7d2gUPiRz3HNlGkS1Vi8Cr149RUwTQX1uBqF06zezOQDrNM6r3FVd6oopEjdgBEiJc1MXu2my7vKb8njFUfPC92kcDzlw84%2BvBwc79TP5oro3ymidFark4lt9Rs69GIbsFo1lCYKz5TvhVkw9frlbo0oDr5L5hUJY%2BQGr5Gw1wzVe4SYz9oeYzjwmJD%2Bah2hX2C9P1WhHhH4KbD9hbM9i%2FqlZc6PCnxJipP26QpBWDr6%2FY3WFdHn6%2B64ZOBd2CQJ5NKbZNcB13TS%2FMW0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230120T110033Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIA57QVAUKOZZKILCXS%2F20230120%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=732998354acc630f54d7995ea9a0e496703577a85d61becfcc31b0297339e878",
+  "creditLine": {
+    "creditLimit": 3500000,
+    "dateOfCreditLimit": "2022-11-16",
+    "expiryDateOfCreditLimit": "2023-10-20"
+  },
+  "creditPolicy": {
+    "partnerDecision": "approved",
+    "loanCategory": 11,
+    "bureauName": "cibil"
+  }
+}
