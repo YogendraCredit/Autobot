@@ -29,7 +29,6 @@ public class MVLStepDefinitions extends BaseClass {
 
         JsonPath postMvlAppFormResponse = HelperMethods.doPost("plexUri", mvlAppform, APIEndPoints.MVL_START_PROCESS_API);
         String status = postMvlAppFormResponse.get("status");
-        Thread.sleep(10000);
         Assert.assertEquals("i",status);
         Thread.sleep(25000);
     }
@@ -56,7 +55,7 @@ public class MVLStepDefinitions extends BaseClass {
 
     }
     @Then("We process disbursal from Razor-pay")
-    public void we_process_disbursal_from_razor_pay() {
+    public void we_process_disbursal_from_razor_pay() throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -64,8 +63,8 @@ public class MVLStepDefinitions extends BaseClass {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.MICROSECONDS);
         driver.get("https://x.razorpay.com/auth");
         driver.findElement(By.xpath("//input[@id=\"accountId\"]")).sendKeys("acp.avnish@gmail.com");
-        driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys("CreditSaison@123");
-        driver.findElement(By.xpath("//input[@id=\"accountId\"]")).click();
+        Thread.sleep(1000);
+
     }
     
 

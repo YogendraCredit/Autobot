@@ -1,5 +1,5 @@
 Request method:	POST
-Request URI:	https://plex.uat.creditsaison.xyz/api/v1/re/async/start-process
+Request URI:	https://plex.qa2.creditsaison.xyz/api/v1/re/async/start-process
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -41,7 +41,7 @@ Body:
         "tenure": 24
     },
     "partnerAppTime": "2022-03-31",
-    "partnerLoanId": "Automation1673520898266",
+    "partnerLoanId": "Automation1674931823276",
     "loanType": "personal",
     "docsUrl": "https://ksf-documentation.s3.ap-south-1.amazonaws.com/MVL_Automation.zip",
     "partnerAppId": "2c9fa00a80072d460180176cd9e453d3",
@@ -74,7 +74,7 @@ Body:
             ],
             "individual": {
                 "fatherName": "Subal Chandra Ghosh",
-                "lastName": "Ghosh",
+                "lastName": "Rajasekhar",
                 "education": "PG",
                 "gender": "M",
                 "industry": 99,
@@ -90,8 +90,8 @@ Body:
                 "accessLevel": "Individual",
                 "employmentType": "NA",
                 "customerGroup": 0,
-                "fullName": "Subhojit Ghosh",
-                "firstName": "Subhojit",
+                "fullName": "Jadda Rajasekhar",
+                "firstName": "Jadda",
                 "nationality": "IN",
                 "dob": "1989-10-04",
                 "middleName": "",
@@ -142,9 +142,9 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Thu, 12 Jan 2023 10:55:02 GMT
+Date: Sat, 28 Jan 2023 18:50:30 GMT
 Content-Type: application/json
-Content-Length: 64
+Content-Length: 65
 Connection: keep-alive
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
@@ -155,16 +155,16 @@ X-XSS-Protection: 1 ; mode=block
 Referrer-Policy: no-referrer
 
 {
-    "message": "Workflow is started. Process Id: 1588",
+    "message": "Workflow is started. Process Id: 13765",
     "status": "i"
 }
 Request method:	GET
-Request URI:	https://plex.uat.creditsaison.xyz/api/v1/process/resource/Automation1673520898266/history?onlyTasks=true
+Request URI:	https://plex.qa2.creditsaison.xyz/api/v1/process/resource/Automation1674931823276/history?onlyTasks=true
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	partnerLoanId=Automation1673520898266
+Path params:	partnerLoanId=Automation1674931823276
 Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
 				Accept=*/*
 				Content-Type=application/json
@@ -172,9 +172,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 12 Jan 2023 10:55:24 GMT
+Date: Sat, 28 Jan 2023 18:50:57 GMT
 Content-Type: application/json
-Content-Length: 1426
+Content-Length: 1453
 Connection: keep-alive
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
@@ -185,109 +185,109 @@ X-XSS-Protection: 1 ; mode=block
 Referrer-Policy: no-referrer
 
 {
-    "workflowId": 1588,
+    "workflowId": 13765,
     "workflowName": "PreFactoAsync",
     "workflowType": "async",
     "status": "s",
-    "createdAt": "2023-01-12T10:55:01.953566",
-    "duration": "10386ms",
+    "createdAt": "2023-01-28T18:50:30.211632",
+    "duration": "7256ms",
     "totalAPICalls": 12,
     "taskList": [
         {
-            "taskId": 8148,
+            "taskId": 132766,
             "taskName": "ValidateDocuments",
             "taskType": "Task",
             "status": "s",
-            "duration": "2023ms"
+            "duration": "1110ms"
         },
         {
-            "taskId": 8150,
+            "taskId": 132768,
             "taskName": "AppFormPost",
             "taskType": "Task",
             "status": "s",
-            "duration": "359ms"
+            "duration": "298ms"
         },
         {
-            "taskId": 8152,
+            "taskId": 132770,
             "taskName": "CreditPolicyCheck",
             "taskType": "Task",
             "status": "s",
-            "duration": "507ms"
+            "duration": "416ms"
         },
         {
-            "taskId": 8154,
+            "taskId": 132772,
             "taskName": "IsBureauPullRequired",
             "taskType": "Task",
             "status": "s",
-            "duration": "545ms"
+            "duration": "375ms"
         },
         {
-            "taskId": 8156,
+            "taskId": 132774,
             "taskName": "BureauPull",
             "taskType": "Task",
             "status": "s",
-            "duration": "792ms"
+            "duration": "479ms"
         },
         {
-            "taskId": 8158,
+            "taskId": 132776,
             "taskName": "WaitForBureauReport",
             "taskType": "Wait",
             "status": "s",
-            "duration": "3511ms"
+            "duration": "2878ms"
         },
         {
-            "taskId": 8159,
+            "taskId": 132777,
             "taskName": "BureauReportStatus",
             "taskType": "Task",
             "status": "s",
-            "duration": "3ms"
+            "duration": "0ms"
         },
         {
-            "taskId": 8161,
+            "taskId": 132779,
             "taskName": "BureauScoreCheck",
             "taskType": "Task",
             "status": "s",
-            "duration": "391ms"
+            "duration": "299ms"
         },
         {
-            "taskId": 8163,
+            "taskId": 132781,
             "taskName": "Verification",
             "taskType": "Task",
             "status": "s",
-            "duration": "474ms"
+            "duration": "384ms"
         },
         {
-            "taskId": 8165,
+            "taskId": 132783,
             "taskName": "GreenChannelAlgo",
             "taskType": "Task",
             "status": "s",
-            "duration": "424ms"
+            "duration": "332ms"
         },
         {
-            "taskId": 8167,
+            "taskId": 132785,
             "taskName": "PreApproval",
             "taskType": "Task",
             "status": "s",
-            "duration": "160ms"
+            "duration": "132ms"
         },
         {
-            "taskId": 8169,
+            "taskId": 132787,
             "taskName": "StartGCWorkflow",
             "taskType": "Task",
             "status": "s",
-            "duration": "62ms"
+            "duration": "100ms"
         },
         {
-            "taskId": 8171,
+            "taskId": 132789,
             "taskName": "EndWorkflowAndSendCallback",
             "taskType": "Task",
             "status": "s",
-            "duration": "32ms"
+            "duration": "19ms"
         }
     ]
 }
 Request method:	POST
-Request URI:	https://thor.uat.creditsaison.xyz/api/v1/callback/status
+Request URI:	https://thor.qa2.creditsaison.xyz/api/v1/callback/status
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -301,16 +301,16 @@ Multiparts:		<none>
 Body:
 {
     "partnerLoanIds": [
-        "Automation1673520898266"
+        "Automation1674931823276"
     ]
 }
 HTTP/1.1 200 
-Date: Thu, 12 Jan 2023 10:55:57 GMT
+Date: Sat, 28 Jan 2023 18:51:28 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: JSESSIONID=3D2F207FB6D22EEC6B51AA97DD6C449C; Path=/; HttpOnly
-tracer-id: b8b8608cac87a051
+Set-Cookie: JSESSIONID=40F1510AB9FEBE9432D3346B6F606913; Path=/; HttpOnly
+tracer-id: 2ece3cafc8c6e22a
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -320,28 +320,28 @@ X-Frame-Options: DENY
 
 [
     {
-        "partnerLoanId": "Automation1673520898266",
+        "partnerLoanId": "Automation1674931823276",
         "callbacks": [
             {
                 "value": "09",
                 "message": "Loan application has been pre approved.",
-                "status": "FAILED"
+                "status": "SENT"
             },
             {
                 "value": "15",
                 "message": "Loan application has been approved.",
-                "status": "FAILED"
+                "status": "SENT"
             }
         ]
     }
 ]
 Request method:	GET
-Request URI:	https://shield.uat.creditsaison.xyz/api/v1/appForm/findByPartnerLoanId/Automation1673520898266
+Request URI:	https://shield.qa2.creditsaison.xyz/api/v1/appForm/findByPartnerLoanId/Automation1674931823276
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	partnerLoanId=Automation1673520898266
+Path params:	partnerLoanId=Automation1674931823276
 Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
 				Accept=*/*
 				Content-Type=application/json
@@ -349,12 +349,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Date: Thu, 12 Jan 2023 10:55:59 GMT
+Date: Sat, 28 Jan 2023 18:51:29 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: JSESSIONID=73F4B487B4E14C9A34EDBD2AB0541E7A; Path=/; HttpOnly
-tracer-id: f248a1b707c266fc
+Set-Cookie: JSESSIONID=C768229F017DF643B58CBAF7F225D2B5; Path=/; HttpOnly
+tracer-id: 28964ad9ef148a94
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -363,8 +363,8 @@ Expires: 0
 X-Frame-Options: DENY
 
 {
-    "id": "2be31543-6244-43ec-ac4e-81d4f96da98c",
-    "partnerLoanId": "Automation1673520898266",
+    "id": "3a22f8dc-defa-4557-bf78-f524d2c902b9",
+    "partnerLoanId": "Automation1674931823276",
     "restructured": null,
     "oldPartnerLoanId": null,
     "limitEnhanced": null,
@@ -372,20 +372,20 @@ X-Frame-Options: DENY
     "partnerAppId": "2c9fa00a80072d460180176cd9e453d3",
     "partnerId": "MV",
     "partnerAppTime": "2022-03-31T00:00:00",
-    "partnerDisburseTime": "2023-01-12T10:55:04",
+    "partnerDisburseTime": "2023-01-28T18:50:31",
     "partnerSanctionTime": "2022-03-31T00:00:00",
     "source": "colending",
     "loanType": "personal",
     "creditLine": null,
     "linkedIndividuals": [
         {
-            "id": 41357,
+            "id": 201832,
             "applicantType": "LinkedIndividual",
             "individual": {
-                "id": 38841,
-                "firstName": "Subhojit",
+                "id": 192328,
+                "firstName": "Jadda",
                 "middleName": "",
-                "lastName": "Ghosh",
+                "lastName": "Rajasekhar",
                 "salutation": "NA",
                 "accessLevel": "Individual",
                 "education": "PG",
@@ -394,7 +394,7 @@ X-Frame-Options: DENY
                 "cibil": null,
                 "dob": "1989-10-04T00:00:00",
                 "fatherName": "Subal Chandra Ghosh",
-                "fullName": "Subhojit Ghosh",
+                "fullName": "Jadda Rajasekhar",
                 "caste": null,
                 "religion": null,
                 "nationality": "IN",
@@ -441,7 +441,7 @@ X-Frame-Options: DENY
             "business": null,
             "bankAccounts": [
                 {
-                    "id": 33327,
+                    "id": 179887,
                     "type": "savings",
                     "holderName": "Subhojit Ghosh",
                     "accountNumber": "919010093302041919010093302041",
@@ -453,12 +453,12 @@ X-Frame-Options: DENY
             ],
             "kyc": [
                 {
-                    "id": 46624,
+                    "id": 206555,
                     "kycType": "panCard",
                     "kycValue": "PRZTE7681U",
-                    "firstName": "Subhojit",
+                    "firstName": "Jadda",
                     "middleName": "",
-                    "lastName": "Ghosh",
+                    "lastName": "Rajasekhar",
                     "issueDate": null,
                     "issuingAuthority": null,
                     "fatherName": "Subal Chandra Ghosh",
@@ -477,7 +477,7 @@ X-Frame-Options: DENY
             ],
             "addresses": [
                 {
-                    "id": 44724,
+                    "id": 306710,
                     "type": "PER",
                     "line1": "VILL HARLATAR POST MANJHLADIH PS NARAYANPUR,HARLATAR,Manghladih",
                     "line2": "",
@@ -489,7 +489,7 @@ X-Frame-Options: DENY
                     "priority": 4
                 },
                 {
-                    "id": 44723,
+                    "id": 306709,
                     "type": "CURRES",
                     "line1": "VILL HARLATAR POST MANJHLADIH PS NARAYANPUR,HARLATAR,Manghladih",
                     "line2": "",
@@ -502,7 +502,7 @@ X-Frame-Options: DENY
                 }
             ],
             "misc": {
-                "id": 35501,
+                "id": 179590,
                 "netWorth": null,
                 "revenue": null,
                 "income": 20000.0,
@@ -517,7 +517,7 @@ X-Frame-Options: DENY
             },
             "contacts": [
                 {
-                    "id": 74269,
+                    "id": 370333,
                     "type": "phone",
                     "value": "7250966337",
                     "notify": true,
@@ -526,7 +526,7 @@ X-Frame-Options: DENY
                     "countryCode": "+91"
                 },
                 {
-                    "id": 74270,
+                    "id": 370334,
                     "type": "email",
                     "value": "bhudevswarnkar@gmail.com",
                     "notify": false,
@@ -541,9 +541,9 @@ X-Frame-Options: DENY
                 
             ],
             "nsdl": null,
-            "dedupe": "-1",
+            "dedupe": "2",
             "dedupeReason": null,
-            "customerId": "L6phKlI8Sna_Q5aRP06Fng",
+            "customerId": "aHzYpcCJQHSYnX8fTLfX9w",
             "cif": null,
             "limitId": null,
             "transitionState": "idVerified",
@@ -566,7 +566,7 @@ X-Frame-Options: DENY
     "linkedBusiness": null,
     "assetGroup": null,
     "loan": {
-        "id": 62230,
+        "id": 190468,
         "feeDetails": [
             
         ],
@@ -598,7 +598,7 @@ X-Frame-Options: DENY
         "nextRepayPftDate": "2022-05-05T00:00:00",
         "partnerBpiAmount": null,
         "disbursement": {
-            "id": 32215,
+            "id": 180106,
             "disbParty": "CS",
             "disbType": "NEFT",
             "disbDate": "2022-04-11T12:30:53",
@@ -652,15 +652,15 @@ X-Frame-Options: DENY
     "customerConsents": null,
     "loanProduct": "MVL",
     "appFormStatus": "15",
-    "workflowId": "2840952",
+    "workflowId": "11422815",
     "status": "CREDIT_COMPLETE",
     "stage": "creditstage",
     "greenChannelFlag": true,
-    "createdAt": "2023-01-12T10:55:04",
+    "createdAt": "2023-01-28T18:50:31",
     "dsa": null,
     "marketplace": false,
     "bankStmtReq": null,
-    "flowType": "COLENDING",
+    "flowType": "NON_FLDG",
     "softRejected": false,
     "eligibleForSoftReject": false,
     "miscData": {
@@ -678,7 +678,7 @@ X-Frame-Options: DENY
     "loanAppDedupe": null
 }
 Request method:	POST
-Request URI:	https://thor.uat.creditsaison.xyz/api/v1/callback/status
+Request URI:	https://thor.qa2.creditsaison.xyz/api/v1/callback/status
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -692,16 +692,16 @@ Multiparts:		<none>
 Body:
 {
     "partnerLoanIds": [
-        "Automation1673520898266"
+        "Automation1674931823276"
     ]
 }
 HTTP/1.1 200 
-Date: Thu, 12 Jan 2023 10:56:00 GMT
+Date: Sat, 28 Jan 2023 18:51:31 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: JSESSIONID=1E7EEC42B1F22AA1230528687262DD9A; Path=/; HttpOnly
-tracer-id: 9651a8de4c266aef
+Set-Cookie: JSESSIONID=6FBAA605E02E13A322247FAD299FC175; Path=/; HttpOnly
+tracer-id: 41e308aecc258970
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -711,17 +711,295 @@ X-Frame-Options: DENY
 
 [
     {
-        "partnerLoanId": "Automation1673520898266",
+        "partnerLoanId": "Automation1674931823276",
         "callbacks": [
             {
                 "value": "09",
                 "message": "Loan application has been pre approved.",
-                "status": "FAILED"
+                "status": "SENT"
             },
             {
                 "value": "15",
                 "message": "Loan application has been approved.",
-                "status": "FAILED"
+                "status": "SENT"
+            }
+        ]
+    }
+]
+Request method:	POST
+Request URI:	https://9grlda09xb.execute-api.us-east-1.amazonaws.com/all/signature?hmacSignedPath=%2Fqa2%2Fapi%2Fv2%2Fdisbursal%2Finstructions&apiMethodCall=POST
+Proxy:			<none>
+Request params:	<none>
+Query params:	hmacSignedPath=/qa2/api/v2/disbursal/instructions
+				apiMethodCall=POST
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				x-api-key=PA4IfjQ5jV1OBhWGvqoTXwxl6OQEo529jSrSvDvc
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "amount": 10000.0,
+    "apr": 200,
+    "partnerLoanId": "Automation1674931823276",
+    "loanStartDate": "2022-09-02T08:01:51",
+    "loanProduct": "MVL",
+    "coolOffPeriod": 4,
+    "loanIntRate": 12.34,
+    "firstEMIDate": "2022-09-02T08:01:51",
+    "netDisbursalAmount": {
+        "total": 5000,
+        "ksfShare": 3500,
+        "partnerShare": 1500
+    },
+    "loanComponents": {
+        "insurance": {
+            "total": 500,
+            "ksfShare": 0,
+            "partnerShare": 500
+        },
+        "foreClosure": {
+            "total": 1000,
+            "ksfShare": 1000,
+            "partnerShare": 0
+        },
+        "bpi": {
+            "total": 1000,
+            "ksfShare": 0,
+            "partnerShare": 1000
+        },
+        "processingFee": {
+            "total": 1000,
+            "ksfShare": 0,
+            "partnerShare": 1000
+        },
+        "topUpAmount": {
+            "total": 1000,
+            "ksfShare": 1000,
+            "partnerShare": 0
+        }
+    },
+    "tenure": 13
+}
+HTTP/1.1 200 OK
+Date: Sat, 28 Jan 2023 18:51:32 GMT
+Content-Type: application/json
+Content-Length: 138
+Connection: keep-alive
+x-amzn-RequestId: 87368e8e-8f28-47a9-85ce-574c3519772c
+x-amz-apigw-id: fd48NFJ7IAMFtbg=
+X-Amzn-Trace-Id: Root=1-63d56eb4-03c4e0de0eabd2906177f687;Sampled=0
+
+{
+    "signedDate": 1674931892371,
+    "signGenerated": "MTZjZjdlMWE3YmNkZThlZWQ3YTExYTM2MzMyODhkZTkwMTg4OTNkY2EyYzY0NWRiYTFlYjQxMGVjZTc3NDkyNg=="
+}
+Request method:	POST
+Request URI:	https://u034fbz1i2.execute-api.eu-west-1.amazonaws.com/qa2/api/v2/disbursal/instructions?signedDate=-105353069
+Proxy:			<none>
+Request params:	<none>
+Query params:	signedDate=-105353069
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				username=partnerapikey
+				x-api-key=qDsBIltBBz5LUpSDWo3K2aE5SegvYgsv3OyRKPSF
+				signature=MTZjZjdlMWE3YmNkZThlZWQ3YTExYTM2MzMyODhkZTkwMTg4OTNkY2EyYzY0NWRiYTFlYjQxMGVjZTc3NDkyNg==
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "amount": 10000.0,
+    "apr": 200,
+    "partnerLoanId": "Automation1674931823276",
+    "loanStartDate": "2022-09-02T08:01:51",
+    "loanProduct": "MVL",
+    "coolOffPeriod": 4,
+    "loanIntRate": 12.34,
+    "firstEMIDate": "2022-09-02T08:01:51",
+    "netDisbursalAmount": {
+        "total": 5000,
+        "ksfShare": 3500,
+        "partnerShare": 1500
+    },
+    "loanComponents": {
+        "insurance": {
+            "total": 500,
+            "ksfShare": 0,
+            "partnerShare": 500
+        },
+        "foreClosure": {
+            "total": 1000,
+            "ksfShare": 1000,
+            "partnerShare": 0
+        },
+        "bpi": {
+            "total": 1000,
+            "ksfShare": 0,
+            "partnerShare": 1000
+        },
+        "processingFee": {
+            "total": 1000,
+            "ksfShare": 0,
+            "partnerShare": 1000
+        },
+        "topUpAmount": {
+            "total": 1000,
+            "ksfShare": 1000,
+            "partnerShare": 0
+        }
+    },
+    "tenure": 13
+}
+HTTP/1.1 200 OK
+Date: Sat, 28 Jan 2023 18:51:35 GMT
+Content-Type: application/json
+Content-Length: 100
+Connection: keep-alive
+x-amzn-RequestId: ce725c06-2ed3-4c30-a075-b609b3b9f653
+x-amz-apigw-id: fd48XGljjoEFbVQ=
+X-Amzn-Trace-Id: Root=1-63d56eb5-098d96630cfbdd53162f6a0f;Sampled=0
+
+{
+    "partnerLoanId": "Automation1674931823276",
+    "message": "Successfully posted disbursal instruction"
+}
+Request method:	GET
+Request URI:	https://hercules.qa2.creditsaison.xyz/api/v1/process/resource/Automation1674931823276/history
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	partnerLoanId=Automation1674931823276
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 28 Jan 2023 18:52:01 GMT
+Content-Type: application/json
+Content-Length: 915
+Connection: keep-alive
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1 ; mode=block
+Referrer-Policy: no-referrer
+
+{
+    "workflowId": 2016,
+    "workflowName": "NonCreditLineDisbursal",
+    "workflowType": "async",
+    "status": "w",
+    "createdAt": "2023-01-28T18:51:35.808908",
+    "duration": "2187ms",
+    "totalAPICalls": 4,
+    "taskList": [
+        {
+            "taskId": 3810,
+            "taskName": "UpdateWorkflowId",
+            "taskType": "Task",
+            "status": "s",
+            "duration": "154ms"
+        },
+        {
+            "taskId": 3811,
+            "taskName": "UpdateWorkflowIdCondition",
+            "taskType": "Condition",
+            "status": "s",
+            "duration": "0ms"
+        },
+        {
+            "taskId": 3812,
+            "taskName": "CreateLoanInXmen",
+            "taskType": "Task",
+            "status": "s",
+            "duration": "456ms"
+        },
+        {
+            "taskId": 3813,
+            "taskName": "CreateLoanInXmenCondition",
+            "taskType": "Condition",
+            "status": "s",
+            "duration": "0ms"
+        },
+        {
+            "taskId": 3814,
+            "taskName": "StartDisbursalTrigger",
+            "taskType": "Task",
+            "status": "s",
+            "duration": "955ms"
+        },
+        {
+            "taskId": 3815,
+            "taskName": "StartDisbursalTriggerCondition",
+            "taskType": "Condition",
+            "status": "s",
+            "duration": "0ms"
+        },
+        {
+            "taskId": 3816,
+            "taskName": "WaitForDisbursalConfirmation",
+            "taskType": "Wait",
+            "status": "p",
+            "duration": "0ms"
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://thor.qa2.creditsaison.xyz/api/v1/callback/status
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic QGRNMU46UEAkJFcwckQ=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "partnerLoanIds": [
+        "Automation1674931823276"
+    ]
+}
+HTTP/1.1 200 
+Date: Sat, 28 Jan 2023 18:52:14 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: JSESSIONID=DEAFAC4562D8BF13DFA8602AE5807536; Path=/; HttpOnly
+tracer-id: f62caa351fd2f262
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+[
+    {
+        "partnerLoanId": "Automation1674931823276",
+        "callbacks": [
+            {
+                "value": "09",
+                "message": "Loan application has been pre approved.",
+                "status": "SENT"
+            },
+            {
+                "value": "15",
+                "message": "Loan application has been approved.",
+                "status": "SENT"
             }
         ]
     }

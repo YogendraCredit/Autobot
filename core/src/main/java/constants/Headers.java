@@ -12,7 +12,12 @@ public class Headers {
 
 
     public static String GUPSHUP_USER_NAME = "gupshup";
+    public static String PAYSENCE_USER_NAME = "PaySense";
     public static String GUPSHUP_API_KEY = "v7eR6Pg6Gw2T2VOmPs7GIyWCZPFq6jr9rXB9tzL7";
+    public static String PAYSENCE_API_KEY = "gcIDL1GoaKCKGCGvApmD32JXjFObIHtaktUKYOkc";
+
+    public static String PARTNER_USER_NAME = "partnerapikey";
+    public static String PARTNER_API_KEY = "qDsBIltBBz5LUpSDWo3K2aE5SegvYgsv3OyRKPSF";
 
     public static String HMAC_API_KEY = "PA4IfjQ5jV1OBhWGvqoTXwxl6OQEo529jSrSvDvc";
 

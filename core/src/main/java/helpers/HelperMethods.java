@@ -11,6 +11,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.*;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,13 +86,13 @@ public class HelperMethods extends BaseClass {
             FileWriter outputfile = new FileWriter(file);
 
             // create CSVWriter object filewriter object as parameter
-            CSVWriter writer = new CSVWriter(outputfile, CSVWriter.NO_QUOTE_CHARACTER);
+            CSVWriter writer = new CSVWriter(outputfile,',',CSVWriter.NO_QUOTE_CHARACTER);
 
             // create a List which contains String array
             List<String[]> data = new ArrayList<>();
-            data.add(new String[] { "partner_loan_id", "offer_id", "credit_limit","min_tenure","max_tenure","roi","preferred_tenure","date_of_offer","expiry_date_of_offer" });
+            data.add(new String[] {"partner_loan_id","offer_id","credit_limit","min_tenure","max_tenure","roi","preferred_tenure","date_of_offer","expiry_date_of_offer" });
             partnerLoanId = "AutomationNonFldg"+System.currentTimeMillis();
-            data.add(new String[] { partnerLoanId, "c9bf8180-fd9c-4115-b786-d39fe97e1900", "200000" ,"3","60","14","48","2022-07-22","2023-10-22"});
+            data.add(new String[] {partnerLoanId,"c9bf8180-fd9c-4115-b786-d39fe97e1900","200000","3","60","14","48","2022-07-22","2023-10-22"});
             writer.writeAll(data);
             // closing writer connection
             writer.close();
@@ -105,7 +106,7 @@ public class HelperMethods extends BaseClass {
         String apiResponse = apiRequest.when().post(apiEndPoints)
                 .then().statusCode(200).extract().response().asString();
 
-        //file.deleteOnExit();
+        file.deleteOnExit();
         return partnerLoanId;
     }
 
@@ -119,12 +120,36 @@ public class HelperMethods extends BaseClass {
                 .extract().response().asString();
 
         JsonPath jsonPath = new JsonPath(hmacResponse);
-        String signedDate = jsonPath.get("signedDate");
+        int signedDate = jsonPath.getInt("signedDate");
         String signGenerated = jsonPath.get("signGenerated");
 
         RequestSpecification postLambdaRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("lambdaUri"))
                 .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.USER_NAME, Headers.GUPSHUP_USER_NAME)
                 .header(API_KEY, GUPSHUP_API_KEY).header(Headers.SIGNATURE,signGenerated).queryParam(Headers.SIGNED_DATE,signedDate).body(requestBody);
+        String lambdaResponse = postLambdaRequest.when().post(apiEndPoint).then().statusCode(200)
+                .extract().response().asString();
+
+        JsonPath postlambdaResponse = new JsonPath(lambdaResponse);
+        return postlambdaResponse;
+
+    }
+
+
+    public static JsonPath doPostLamdaUsingPartnerKey(String requestBody, String apiEndPoint, String hmacSignedPath) throws Exception {
+
+        RequestSpecification postHmacRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("hmacUri"))
+                .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.API_KEY, Headers.HMAC_API_KEY)
+                .queryParam(Headers.HMAC_SIGNED_PATH, hmacSignedPath).queryParam(Headers.API_METHOD_CALL, Headers.POST_CALL).body(requestBody);
+        String hmacResponse = postHmacRequest.when().post().then().statusCode(200)
+                .extract().response().asString();
+
+        JsonPath jsonPath = new JsonPath(hmacResponse);
+        int signedDate = jsonPath.getInt("signedDate");
+        String signGenerated = jsonPath.get("signGenerated");
+
+        RequestSpecification postLambdaRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("lambdaUri"))
+                .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.USER_NAME, Headers.PARTNER_USER_NAME)
+                .header(API_KEY, PARTNER_API_KEY).header(Headers.SIGNATURE,signGenerated).queryParam(Headers.SIGNED_DATE,signedDate).body(requestBody);
         String lambdaResponse = postLambdaRequest.when().post(apiEndPoint).then().statusCode(200)
                 .extract().response().asString();
 
@@ -145,7 +170,7 @@ public class HelperMethods extends BaseClass {
 
     public static JsonPath doGetWithAppForm(String baseUri, String appFormId, String apiEndPoints,String loanProductCode) throws Exception {
         RequestSpecification apiRequest = given().spec(requestSpecifications())
-                .baseUri(initializeEnvironment(baseUri)).pathParam("loanProductCode", appFormId).queryParam("loanProductCode",loanProductCode);
+                .baseUri(initializeEnvironment(baseUri)).pathParam("appFormId", appFormId).queryParam("loanProductCode",loanProductCode);
         String apiResponse = apiRequest.when().get(apiEndPoints)
                 .then().statusCode(200).extract().response().asString();
 
