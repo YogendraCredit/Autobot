@@ -47,7 +47,7 @@ public class CommonStepDefinitions extends BaseClass {
 
         }else if (environment.equals("dev")) {
             hmacSignedPathForDisbursal = HmacSignedPaths.HMAC_PATH_DISBURSAL_INSTRUCTIONS_DEV;
-            JsonPath disbursalInstructionsResponse = HelperMethods.doPostLamdaUsingPartnerKey(disbursalRequestBody,APIEndPoints.DISBURSAL_INSTRUCTIONS_API,hmacSignedPathForDisbursal);
+            JsonPath disbursalInstructionsResponse = HelperMethods.doPostLamdaUsingPaysense(disbursalRequestBody,APIEndPoints.DISBURSAL_INSTRUCTIONS_API,hmacSignedPathForDisbursal);
 
             Thread.sleep(25000);
             JsonPath withdrawalHistoryInResponse = HelperMethods.doGet("herculesUri", partnerLoanId, APIEndPoints.WITHDRAWAL_HISTORY_API);

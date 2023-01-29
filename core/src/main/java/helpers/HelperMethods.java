@@ -27,7 +27,7 @@ public class HelperMethods extends BaseClass {
     public static RequestSpecification requestSpecifications() throws Exception {
 
         if (request == null) {
-            PrintStream log = new PrintStream(new FileOutputStream("WorkFlowLogs.txt"));
+            PrintStream log = new PrintStream(new FileOutputStream("workflowLogs.txt"));
             request = new RequestSpecBuilder().setContentType(ContentType.JSON)
                     .addFilter(RequestLoggingFilter.logRequestTo(log)).addFilter(ResponseLoggingFilter.logResponseTo(log))
                     .addHeader(HEADER_NAME, HEADER_VALUE).build();
@@ -40,7 +40,7 @@ public class HelperMethods extends BaseClass {
     public static RequestSpecification multipartRequestSpecifications() throws Exception {
 
         if (multipartrequest == null) {
-            PrintStream log = new PrintStream(new FileOutputStream("FileUploadLogs.txt"));
+            PrintStream log = new PrintStream(new FileOutputStream("fileUploadLogs.txt"));
             multipartrequest = new RequestSpecBuilder().setContentType(ContentType.MULTIPART)
                     .addFilter(RequestLoggingFilter.logRequestTo(log)).addFilter(ResponseLoggingFilter.logResponseTo(log))
                     .addHeader(HEADER_NAME, HEADER_VALUE).build();
@@ -150,6 +150,29 @@ public class HelperMethods extends BaseClass {
         RequestSpecification postLambdaRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("lambdaUri"))
                 .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.USER_NAME, Headers.PARTNER_USER_NAME)
                 .header(API_KEY, PARTNER_API_KEY).header(Headers.SIGNATURE,signGenerated).queryParam(Headers.SIGNED_DATE,signedDate).body(requestBody);
+        String lambdaResponse = postLambdaRequest.when().post(apiEndPoint).then().statusCode(200)
+                .extract().response().asString();
+
+        JsonPath postlambdaResponse = new JsonPath(lambdaResponse);
+        return postlambdaResponse;
+
+    }
+
+    public static JsonPath doPostLamdaUsingPaysense(String requestBody, String apiEndPoint, String hmacSignedPath) throws Exception {
+
+        RequestSpecification postHmacRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("hmacUri"))
+                .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.API_KEY, Headers.HMAC_API_KEY)
+                .queryParam(Headers.HMAC_SIGNED_PATH, hmacSignedPath).queryParam(Headers.API_METHOD_CALL, Headers.POST_CALL).body(requestBody);
+        String hmacResponse = postHmacRequest.when().post().then().statusCode(200)
+                .extract().response().asString();
+
+        JsonPath jsonPath = new JsonPath(hmacResponse);
+        int signedDate = jsonPath.getInt("signedDate");
+        String signGenerated = jsonPath.get("signGenerated");
+
+        RequestSpecification postLambdaRequest = given().spec(requestSpecifications()).baseUri(initializeEnvironment("lambdaUri"))
+                .header(Headers.CONTENT_TYPE, Headers.JSON_TYPE).header(Headers.USER_NAME, PAYSENCE_USER_NAME)
+                .header(API_KEY, PAYSENCE_API_KEY).header(Headers.SIGNATURE,signGenerated).queryParam(Headers.SIGNED_DATE,signedDate).body(requestBody);
         String lambdaResponse = postLambdaRequest.when().post(apiEndPoint).then().statusCode(200)
                 .extract().response().asString();
 
